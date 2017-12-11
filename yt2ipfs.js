@@ -23,7 +23,7 @@ if (!fs.existsSync(config.output)) {
     });
 }
 
-exec(cmd, ["-g", args[0],"-f 22/137/135/135/134/133/160/18"], [], function (error, dlLink, stderr) {
+exec(cmd, ["-g", args[0],"-f 22/137/135/244/243"], [], function (error, dlLink, stderr) {
 
     wa = dlLink.split("https://");
 
