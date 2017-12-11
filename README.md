@@ -12,3 +12,8 @@
 ## What you get
 
 ![Preview of console output](https://cdn.mxone.host/yt2ipfs.PNG?v=2)
+
+
+## Known bugs
+
+- Sometimes the uplaoded videos are mutet. Working on it :)
