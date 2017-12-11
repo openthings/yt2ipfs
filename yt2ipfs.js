@@ -4,6 +4,7 @@ var fs = require('fs');
 var request = require('request');
 var progress = require('request-progress');
 var ipfsAPI = require('ipfs-api');
+var mkdirp = require('mkdirp');
 
 var config = require('./config.json');
 var args = process.argv.slice(2);
