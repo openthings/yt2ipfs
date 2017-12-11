@@ -45,7 +45,7 @@ exec(cmd, ["-g", args[0]], [], function (error, dlLink, stderr) {
             process.stdout.cursorTo(0);
             process.stdout.clearLine(1);
             process.stdout.write('100%');
-            console.info("\nDownload finishes!\nStart IPFS Upload...");
+            console.info("\nDownload finished!\nStart IPFS Upload...");
 
             var files = [
                 {
@@ -61,7 +61,8 @@ exec(cmd, ["-g", args[0]], [], function (error, dlLink, stderr) {
 
                 for (i = 0; i < response.length; i++) {
                     if (response[i].path === config.output + "/last.mp4") {
-                        console.log("\nYour filehash: " + response[i].hash)
+                        console.log("\nYour hash: " + response[i].hash);
+                        console.log("\nView your file in your Browser: https://xzor.xyz/ipfs/" + response[i].hash);
                     }
                 }
             })
