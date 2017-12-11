@@ -5,6 +5,7 @@
   "main": "yt2ipfs.js",
   "dependencies": {
     "ipfs-api": "^17.2.4",
+    "mkdirp": "^0.5.1",
     "request": "^2.83.0",
     "request-progress": "^3.0.0"
   },
