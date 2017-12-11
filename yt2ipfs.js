@@ -23,7 +23,7 @@ if (!fs.existsSync(config.output)) {
     });
 }
 
-exec(cmd, ["-g", args[0],"-f bestvideo[ext=mp4]+bestaudio"], [], function (error, dlLink, stderr) {
+exec(cmd, ["-g", args[0],"-f 22/137/135"], [], function (error, dlLink, stderr) {
 
     wa = dlLink.split("https://");
 
