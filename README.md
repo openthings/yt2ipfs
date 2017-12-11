@@ -11,4 +11,4 @@
 
 ## What you get
 
-![Preview of console output](https://cdn.mxone.host/yt2ipfs.PNG)
+![Preview of console output](https://cdn.mxone.host/yt2ipfs.PNG?v=2)
