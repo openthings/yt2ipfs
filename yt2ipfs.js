@@ -3,17 +3,17 @@ var os = require('os');
 var fs = require('fs');
 var request = require('request');
 var progress = require('request-progress');
-var ipfsAPI = require('ipfs-api')
+var ipfsAPI = require('ipfs-api');
 
 var config = require('./config.json');
 var args = process.argv.slice(2);
 var ipfs = ipfsAPI();
-
+var cmd = "";
 
 if (os.platform() === "win32") {
-    var cmd = config.ytdlpath + "/youtube-dl.exe";
+    cmd = config.ytdlpath + "/youtube-dl.exe";
 } else {
-    var cmd = config.ytdlpath + "/youtube-dl";
+    cmd = config.ytdlpath + "/youtube-dl";
 }
 
 if (!fs.existsSync(config.output)) {
@@ -22,7 +22,7 @@ if (!fs.existsSync(config.output)) {
     });
 }
 
-exec(cmd, ["-g",args[0]], [], function (error, dlLink, stderr) {
+exec(cmd, ["-g", args[0]], [], function (error, dlLink, stderr) {
 
     wa = dlLink.split("https://");
 
@@ -60,7 +60,7 @@ exec(cmd, ["-g",args[0]], [], function (error, dlLink, stderr) {
                 }
 
                 for (i = 0; i < response.length; i++) {
-                    if (response[i].path == config.output + "/last.mp4") {
+                    if (response[i].path === config.output + "/last.mp4") {
                         console.log("\nYour filehash: " + response[i].hash)
                     }
                 }
