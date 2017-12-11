@@ -23,7 +23,7 @@ if (!fs.existsSync(config.output)) {
     });
 }
 
-exec(cmd, ["-g", args[0]], [], function (error, dlLink, stderr) {
+exec(cmd, ["-g", args[0],"-f bestvideo[ext=mp4]+bestaudio"], [], function (error, dlLink, stderr) {
 
     wa = dlLink.split("https://");
 
@@ -34,7 +34,6 @@ exec(cmd, ["-g", args[0]], [], function (error, dlLink, stderr) {
     progress(
         request(dlLink), {})
         .on('progress', function (state) {
-
             process.stdout.cursorTo(0);
             process.stdout.clearLine(1);
             process.stdout.write((state.percent).toFixed(2) + '%');
