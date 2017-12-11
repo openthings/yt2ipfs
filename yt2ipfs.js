@@ -18,7 +18,7 @@ if (os.platform() === "win32") {
 }
 
 if (!fs.existsSync(config.output)) {
-    mkdirp(destination, function (err) {
+    mkdirp(config.output, function (err) {
         throw new Error(err);
     });
 }
