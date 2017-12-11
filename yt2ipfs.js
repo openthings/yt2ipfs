@@ -28,7 +28,7 @@ exec(cmd, ["-g", args[0]], [], function (error, dlLink, stderr) {
     wa = dlLink.split("https://");
 
     dlLink = "https://" + wa[wa.length - 1];
-    console.log(dlLink);
+
     console.info("Start Download...");
 
     progress(
