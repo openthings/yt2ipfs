@@ -1,0 +1,21 @@
+{
+  "name": "yt-ipfs",
+  "version": "1.0.0",
+  "description": "Uploads Videos from YouTube to IPFS",
+  "main": "yt2ipfs.js",
+  "dependencies": {
+    "ipfs-api": "^17.2.4",
+    "request": "^2.83.0",
+    "request-progress": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "youtube",
+    "ipfs"
+  ],
+  "author": "wehmoen",
+  "license": "MIT"
+}
