@@ -1,9 +1,13 @@
 const youtube = require("./playlistHelper");
 const ipfs = require("./ipfsHelper");
 const config = require("./config.json");
-const forEach = require('async-foreach').forEach;
+var args = process.argv.slice(2);
 
-var items = youtube.getPlayListItems("PLgM8CVahh79-V4mDweVRplpLbGVuX1qs6", config.google.youtube);
+if (!args[0]) {
+    throw new Error("Usage: node ytpl2ipfs playlistID");
+}
+
+var items = youtube.getPlayListItems(args[0], config.google.youtube);
 
 youtube.downloadVideos(items).then(function () {
     console.log("All videos were downlaoded");
