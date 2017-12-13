@@ -21,7 +21,7 @@ var items = [{"id":args[0]}];
 console.log("Start downloading the video\n");
 
 youtube.downloadVideos(items).then(function () {
-    console.log("The video was downlaoded\n");
+    console.log("The video was downloaded\n");
 }).then(function () {
     ipfs.uploadFiles(items).then(function(files) {
         for(i = 0; i<files.length;i++) {
@@ -29,7 +29,7 @@ youtube.downloadVideos(items).then(function () {
         }
     })
 }).catch(function (e) {
-    console.log("something went wrong: " + e);
+    console.log("Something went wrong: " + e);
 });
 
 

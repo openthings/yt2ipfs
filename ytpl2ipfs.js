@@ -23,7 +23,7 @@ if (!fs.existsSync(config.output)) {
 var items = youtube.getPlayListItems(args[0], config.google.youtube);
 
 youtube.downloadVideos(items).then(function () {
-    console.log("All videos were downlaoded");
+    console.log("All videos were downloaded");
 }).then(function () {
     ipfs.uploadFiles(items).then(function(files) {
         for(i = 0; i<files.length;i++) {
@@ -31,7 +31,7 @@ youtube.downloadVideos(items).then(function () {
         }
     })
 }).catch(function (e) {
-    console.log("something went wrong: " + e);
+    console.log("Something went wrong: " + e);
 });
 
 
