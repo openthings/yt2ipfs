@@ -80,8 +80,6 @@ function saveFile(video) {
 
         exec(cmd, ["-g", video, "-f 22/137/135"], [], function (error, dlLink, stderr) {
 
-            console.log(dlLink);
-
             wa = dlLink.split("https://");
 
             dlLink = "https://" + wa[wa.length - 1];
