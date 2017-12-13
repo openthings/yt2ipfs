@@ -10,7 +10,7 @@ var exports = module.exports = {
             cur = cur.then(function () {
                 return uploadFile("output/" + file.id + ".mp4").then(function(hash){file.hash = hash; return file;}).then(
                     function(file) {
-                        fs.unlink("output/" + file.id + ".mp4");
+                        fs.unlinkSync("output/" + file.id + ".mp4");
                     }
                 );
 
