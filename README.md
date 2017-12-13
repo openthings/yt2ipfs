@@ -7,15 +7,20 @@
 
 ## Usage [Single video]
 
-`node yt2ipfs https://www.youtube.com/watch?v=8leorFMy0rg`
+_8leorFMy0rg_ is the video ID. You can grab it from the YouTube Link: `https://www.youtube.com/watch?v=8leorFMy0rg`
+
+
+`node yt2ipfs 8leorFMy0rg`
 
 ### What you get
 
-![Preview of yt2ipfs](https://cdn.mxone.host/yt2ipfs.PNG?v=3)
+![Preview of yt2ipfs](https://cdn.mxone.host/yt2ipfs.PNG?v=5)
 
-You can see the uploaded video [here](https://xzor.xyz/ipfs/QmRTKbtB2HxNNbFDJ9q9v22n7NQYvF7P2EiURsnyQtzM2Q)
+You can see the uploaded video [here](https://xzor.xyz/ipfs/QmRc7j9w7zc1yQFipePv9QWEzttxpVwS7rAF2eyqQusPPv)
 
 ## Usage [Playlist]
+
+_PLgM8CVahh79-V4mDweVRplpLbGVuX1qs6_ is the playlist ID. You can grab it from the YouTube Link: `https://www.youtube.com/playlist?list=PLgM8CVahh79-V4mDweVRplpLbGVuX1qs6`
 
 `node ytpl2ipfs PLgM8CVahh79-V4mDweVRplpLbGVuX1qs6`
 
