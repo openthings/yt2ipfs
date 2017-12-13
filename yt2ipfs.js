@@ -1,7 +1,7 @@
-var fs = require('fs');
-var mkdirp = require('mkdirp');
-var config = require('./config.json');
-var args = process.argv.slice(2);
+const fs = require('fs');
+const mkdirp = require('mkdirp');
+const config = require('./config.json');
+const args = process.argv.slice(2);
 const youtube = require("./playlistHelper");
 const ipfs = require("./ipfsHelper");
 
