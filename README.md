@@ -17,4 +17,4 @@ You can see the uploaded video [here](https://xzor.xyz/ipfs/QmRTKbtB2HxNNbFDJ9q9
 
 ## Known bugs
 
-- Sometimes the uplaoded videos are mutet. Working on it :)
+- Sometimes the uploaded videos are mutet. Working on it :)

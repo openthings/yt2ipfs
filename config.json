@@ -1,4 +1,7 @@
 {
   "output":"output",
-  "ytdlpath":"lib"
+  "ytdlpath":"lib",
+  "google": {
+    "youtube":"AIzaSyDpe6SIIMp_tmCmf1lD3wKjW-0FFLptcmM"
+  }
 }

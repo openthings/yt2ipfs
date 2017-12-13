@@ -4,10 +4,12 @@
   "description": "Uploads Videos from YouTube to IPFS",
   "main": "yt2ipfs.js",
   "dependencies": {
+    "async-foreach": "^0.1.3",
     "ipfs-api": "^17.2.4",
     "mkdirp": "^0.5.1",
     "request": "^2.83.0",
-    "request-progress": "^3.0.0"
+    "request-progress": "^3.0.0",
+    "sync-request": "^4.1.0"
   },
   "devDependencies": {},
   "scripts": {
